@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Attendance System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="logo">M</div>
+<div id="popup" class="popup">Attendance Marked ✅</div>
+
+<div class="app">
+    <h2>📊 Smart Attendance System</h2>
+
+    <input type="text" id="studentName" placeholder="Enter student name">
+    <input type="date" id="date">
+    <button onclick="addStudent()">Add Student</button>
+
+    <input type="text" id="search" placeholder="Search student..." onkeyup="searchStudent()">
+
+    <button onclick="showCalendar()">📅 Calendar View</button>
+
+    <h3>Students</h3>
+    <ul id="studentList"></ul>
+
+    <h3 id="overall">Overall Attendance: 0%</h3>
+
+    <canvas id="chart"></canvas>
+</div>
+
+<footer>
+    Created by <b>Malishka Bhayje</b> 💻✨
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
